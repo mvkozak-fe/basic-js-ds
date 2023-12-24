@@ -37,9 +37,11 @@ class Queue {
     if (!this.head) {
       this.tail = null;
       return null;
-    }    
+    }
+    const value = this.head.value;
     this.head = this.head.next;
-    return this.head.value;
+    return value;
+
   }
 }
 
